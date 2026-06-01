@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen — Un header élégant</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f1a;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .primary {
+      background: white;
+      color: #000;
+    }
+
+    .outline {
+      background: transparent;
+      border: 1px solid #555;
+      color: white;
+    }
+
+    .outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Lumen</div>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">À propos</a>
+    <a href="#">Produits</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+  <h1>Un header élégant, prêt à l'emploi</h1>
+  <p>Navigation responsive, effet de scroll avec flou, et menu mobile soigné.</p>
+
+  <div class="buttons">
+    <button class="btn primary">
+      Commencer →
+    </button>
+    <button class="btn outline">
+      En savoir plus
+    </button>
+  </div>
+</main>
+
+</body>
+</html>
