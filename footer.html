@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer </title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f0f1a, #1a1a2e);
+      color: #eee;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    p {
+      color: #aaa;
+    }
+
+    footer {
+      position: relative;
+      margin-top: 80px;
+      overflow: hidden;
+      background: #121225;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 24px 40px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 40px;
+    }
+
+    .brand { grid-column: span 5; }
+    .links { grid-column: span 3; }
+    .contact { grid-column: span 4; }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #a855f7, #3b82f6);
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .socials span {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: white;
+      outline: none;
+      padding: 10px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      border-radius: 50px;
+      padding: 6px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    button {
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+      background: white;
+      color: #121225;
+    }
+
+    .bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+  <div>
+    <h1>Un footer, fait avec soin.</h1>
+    <p>Faites défiler vers le bas pour le voir.</p>
+  </div>
+</main>
+
+<footer>
+
+  <div class="container">
+
+    <!-- BRAND -->
+    <div class="brand">
+      <div>
+        <span class="logo"></span>
+        <strong>Lumen</strong>
+      </div>
+
+      <p style="margin-top:20px; max-width:300px;">
+        Conçu pour ceux qui aiment les détails. Une touche de lumière dans chaque pixel.
+      </p>
+
+      <div class="socials" style="margin-top:20px;">
+        <span>IG</span>
+        <span>TW</span>
+        <span>GH</span>
+        <span>IN</span>
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+      <h4>Navigation</h4>
+      <ul>
+        <li>Accueil</li>
+        <li>À propos</li>
+        <li>Produits</li>
+        <li>Journal</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+      <h4>Contact</h4>
+      <ul>
+        <li>📧 hello@lumen.studio</li>
+        <li>📞 +33 1 23 45 67 89</li>
+        <li>📍 12 rue de la Lumière, Paris</li>
+      </ul>
+
+      <form>
+        <input type="email" placeholder="Votre email" />
+        <button>S'abonner</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="container bottom">
+    <p>© 2026 Lumen Studio. Tous droits réservés.</p>
+    <div>
+      <span>Confidentialité</span> |
+      <span>Conditions</span> |
+      <span>Cookies</span>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
